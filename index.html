@@ -301,7 +301,7 @@ const RISK_PRESETS = {
   agresivo:   {desc:'Máximo potencial de crecimiento. Alta volatilidad.',   alloc:[40,15,15,5,5,5,5,10]},
 };
 
-let state={capital:100000,currency:'MXN',active:ASSETS.map(()=>true),alloc:[...ASSETS.map(a=>a.defaultPct)],years:10,aport:0,view:'total',risk:'conservador'};
+let state={capital:1000,currency:'MXN',active:ASSETS.map(()=>true),alloc:[...ASSETS.map(a=>a.defaultPct)],years:10,aport:0,view:'total',risk:'conservador'};
 let chart=null;
 
 function fmt(v){return(state.currency==='EUR'?'€':'$')+Math.round(v).toLocaleString('es-MX');}
